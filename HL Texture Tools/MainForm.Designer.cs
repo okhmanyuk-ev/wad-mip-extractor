@@ -132,6 +132,7 @@ namespace HLTextureTools
             this.listViewEx1 = new HLTextureTools.ListViewEx();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new HLTextureTools.ListBoxEx();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -159,6 +160,7 @@ namespace HLTextureTools
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.imageToolStripMenuItem,
@@ -167,7 +169,7 @@ namespace HLTextureTools
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1312, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -182,7 +184,7 @@ namespace HLTextureTools
             this.toolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileToolStripMenuItem.Text = "File";
             this.fileToolStripMenuItem.DropDownOpening += new System.EventHandler(this.fileToolStripMenuItem_DropDownOpening);
             // 
@@ -190,7 +192,7 @@ namespace HLTextureTools
             // 
             this.openFileItem.Name = "openFileItem";
             this.openFileItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openFileItem.Size = new System.Drawing.Size(155, 22);
+            this.openFileItem.Size = new System.Drawing.Size(224, 26);
             this.openFileItem.Text = "Open...";
             this.openFileItem.Click += new System.EventHandler(this.openFileItem_Click);
             // 
@@ -199,7 +201,7 @@ namespace HLTextureTools
             this.extractImageItem.Enabled = false;
             this.extractImageItem.Name = "extractImageItem";
             this.extractImageItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.extractImageItem.Size = new System.Drawing.Size(155, 22);
+            this.extractImageItem.Size = new System.Drawing.Size(224, 26);
             this.extractImageItem.Text = "Extract";
             this.extractImageItem.Click += new System.EventHandler(this.extractImageItem_Click);
             // 
@@ -211,82 +213,83 @@ namespace HLTextureTools
             this.asBMPToolStripMenuItem,
             this.asGIFToolStripMenuItem,
             this.asTIFFToolStripMenuItem,
+            this.toolStripMenuItem9,
             this.toolStripMenuItem5,
             this.namesToTXTToolStripMenuItem});
             this.extractAllItem.Enabled = false;
             this.extractAllItem.Name = "extractAllItem";
-            this.extractAllItem.Size = new System.Drawing.Size(155, 22);
+            this.extractAllItem.Size = new System.Drawing.Size(224, 26);
             this.extractAllItem.Text = "Extract all";
             // 
             // asPNGToolStripMenuItem
             // 
             this.asPNGToolStripMenuItem.Name = "asPNGToolStripMenuItem";
-            this.asPNGToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.asPNGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.asPNGToolStripMenuItem.Text = "As PNG ...";
             this.asPNGToolStripMenuItem.Click += new System.EventHandler(this.asPNGToolStripMenuItem_Click);
             // 
             // asJPEGToolStripMenuItem
             // 
             this.asJPEGToolStripMenuItem.Name = "asJPEGToolStripMenuItem";
-            this.asJPEGToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.asJPEGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.asJPEGToolStripMenuItem.Text = "As JPEG ...";
             this.asJPEGToolStripMenuItem.Click += new System.EventHandler(this.asJPEGToolStripMenuItem_Click);
             // 
             // asBMPToolStripMenuItem
             // 
             this.asBMPToolStripMenuItem.Name = "asBMPToolStripMenuItem";
-            this.asBMPToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.asBMPToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.asBMPToolStripMenuItem.Text = "As BMP ...";
             this.asBMPToolStripMenuItem.Click += new System.EventHandler(this.asBMPToolStripMenuItem_Click);
             // 
             // asGIFToolStripMenuItem
             // 
             this.asGIFToolStripMenuItem.Name = "asGIFToolStripMenuItem";
-            this.asGIFToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.asGIFToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.asGIFToolStripMenuItem.Text = "As GIF ...";
             this.asGIFToolStripMenuItem.Click += new System.EventHandler(this.asGIFToolStripMenuItem_Click);
             // 
             // asTIFFToolStripMenuItem
             // 
             this.asTIFFToolStripMenuItem.Name = "asTIFFToolStripMenuItem";
-            this.asTIFFToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.asTIFFToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.asTIFFToolStripMenuItem.Text = "As TIFF ...";
             this.asTIFFToolStripMenuItem.Click += new System.EventHandler(this.asTIFFToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(156, 6);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(221, 6);
             // 
             // namesToTXTToolStripMenuItem
             // 
             this.namesToTXTToolStripMenuItem.Name = "namesToTXTToolStripMenuItem";
-            this.namesToTXTToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.namesToTXTToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.namesToTXTToolStripMenuItem.Text = "Names to TXT ...";
             this.namesToTXTToolStripMenuItem.Click += new System.EventHandler(this.namesToTXTToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(152, 6);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(221, 6);
             // 
             // recFiles
             // 
             this.recFiles.Enabled = false;
             this.recFiles.Name = "recFiles";
-            this.recFiles.Size = new System.Drawing.Size(155, 22);
+            this.recFiles.Size = new System.Drawing.Size(224, 26);
             this.recFiles.Text = "Recent files";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(152, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(221, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -301,7 +304,7 @@ namespace HLTextureTools
             this.toolStripMenuItem3,
             this.copyMenuItem});
             this.imageToolStripMenuItem.Name = "imageToolStripMenuItem";
-            this.imageToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.imageToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.imageToolStripMenuItem.Text = "Image";
             // 
             // colorPaletteToolItem
@@ -309,7 +312,7 @@ namespace HLTextureTools
             this.colorPaletteToolItem.Enabled = false;
             this.colorPaletteToolItem.Name = "colorPaletteToolItem";
             this.colorPaletteToolItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.colorPaletteToolItem.Size = new System.Drawing.Size(203, 22);
+            this.colorPaletteToolItem.Size = new System.Drawing.Size(253, 26);
             this.colorPaletteToolItem.Text = "Color palette";
             this.colorPaletteToolItem.Click += new System.EventHandler(this.colorPaletteToolItem_Click);
             // 
@@ -318,21 +321,21 @@ namespace HLTextureTools
             this.animateMenuItem.Enabled = false;
             this.animateMenuItem.Name = "animateMenuItem";
             this.animateMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F5;
-            this.animateMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.animateMenuItem.Size = new System.Drawing.Size(253, 26);
             this.animateMenuItem.Text = "Animation Play/Stop";
             this.animateMenuItem.Click += new System.EventHandler(this.animateMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(200, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(250, 6);
             // 
             // rotateLItem
             // 
             this.rotateLItem.Enabled = false;
             this.rotateLItem.Name = "rotateLItem";
             this.rotateLItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-            this.rotateLItem.Size = new System.Drawing.Size(203, 22);
+            this.rotateLItem.Size = new System.Drawing.Size(253, 26);
             this.rotateLItem.Text = "Rotate left";
             this.rotateLItem.Click += new System.EventHandler(this.rotateLItem_Click);
             // 
@@ -341,21 +344,21 @@ namespace HLTextureTools
             this.rotateRItem.Enabled = false;
             this.rotateRItem.Name = "rotateRItem";
             this.rotateRItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
-            this.rotateRItem.Size = new System.Drawing.Size(203, 22);
+            this.rotateRItem.Size = new System.Drawing.Size(253, 26);
             this.rotateRItem.Text = "Rotate right";
             this.rotateRItem.Click += new System.EventHandler(this.rotateRItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(200, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(250, 6);
             // 
             // copyMenuItem
             // 
             this.copyMenuItem.Enabled = false;
             this.copyMenuItem.Name = "copyMenuItem";
             this.copyMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.copyMenuItem.Size = new System.Drawing.Size(253, 26);
             this.copyMenuItem.Text = "Copy";
             this.copyMenuItem.Click += new System.EventHandler(this.copyMenuItem_Click);
             // 
@@ -371,13 +374,13 @@ namespace HLTextureTools
             this.thumbnailSizeToolStripMenuItem,
             this.associateToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // bgColorItem
             // 
             this.bgColorItem.Name = "bgColorItem";
-            this.bgColorItem.Size = new System.Drawing.Size(180, 22);
+            this.bgColorItem.Size = new System.Drawing.Size(225, 26);
             this.bgColorItem.Text = "Background color";
             this.bgColorItem.Click += new System.EventHandler(this.bgColorItem_Click);
             // 
@@ -387,7 +390,7 @@ namespace HLTextureTools
             this.transparentBgItem.CheckOnClick = true;
             this.transparentBgItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.transparentBgItem.Name = "transparentBgItem";
-            this.transparentBgItem.Size = new System.Drawing.Size(180, 22);
+            this.transparentBgItem.Size = new System.Drawing.Size(225, 26);
             this.transparentBgItem.Text = "Transparent textures";
             this.transparentBgItem.Click += new System.EventHandler(this.transparentBgItem_Click);
             // 
@@ -395,35 +398,35 @@ namespace HLTextureTools
             // 
             this.tileImageToolStripMenuItem.CheckOnClick = true;
             this.tileImageToolStripMenuItem.Name = "tileImageToolStripMenuItem";
-            this.tileImageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tileImageToolStripMenuItem.Size = new System.Drawing.Size(225, 26);
             this.tileImageToolStripMenuItem.Text = "Tile image";
             this.tileImageToolStripMenuItem.Click += new System.EventHandler(this.tileImageToolStripMenuItem_Click);
             // 
             // switchBackgroundToolStripMenuItem
             // 
             this.switchBackgroundToolStripMenuItem.Name = "switchBackgroundToolStripMenuItem";
-            this.switchBackgroundToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.switchBackgroundToolStripMenuItem.Size = new System.Drawing.Size(225, 26);
             this.switchBackgroundToolStripMenuItem.Text = "Switch background";
             this.switchBackgroundToolStripMenuItem.Click += new System.EventHandler(this.switchBackgroundToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(222, 6);
             // 
             // animationSpeedToolStripMenuItem
             // 
             this.animationSpeedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.animSpeedTextBox});
             this.animationSpeedToolStripMenuItem.Name = "animationSpeedToolStripMenuItem";
-            this.animationSpeedToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.animationSpeedToolStripMenuItem.Size = new System.Drawing.Size(225, 26);
             this.animationSpeedToolStripMenuItem.Text = "Animation speed";
             // 
             // animSpeedTextBox
             // 
             this.animSpeedTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.animSpeedTextBox.Name = "animSpeedTextBox";
-            this.animSpeedTextBox.Size = new System.Drawing.Size(100, 23);
+            this.animSpeedTextBox.Size = new System.Drawing.Size(100, 27);
             this.animSpeedTextBox.Text = "100";
             this.animSpeedTextBox.TextChanged += new System.EventHandler(this.animSpeedTextBox_TextChanged);
             // 
@@ -434,14 +437,14 @@ namespace HLTextureTools
             this.x64ToolStripMenuItem,
             this.x128ToolStripMenuItem});
             this.thumbnailSizeToolStripMenuItem.Name = "thumbnailSizeToolStripMenuItem";
-            this.thumbnailSizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thumbnailSizeToolStripMenuItem.Size = new System.Drawing.Size(225, 26);
             this.thumbnailSizeToolStripMenuItem.Text = "Thumbnail size";
             // 
             // x32ToolStripMenuItem
             // 
             this.x32ToolStripMenuItem.CheckOnClick = true;
             this.x32ToolStripMenuItem.Name = "x32ToolStripMenuItem";
-            this.x32ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.x32ToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.x32ToolStripMenuItem.Text = "32x32";
             this.x32ToolStripMenuItem.Click += new System.EventHandler(this.x32ToolStripMenuItem_Click);
             // 
@@ -451,7 +454,7 @@ namespace HLTextureTools
             this.x64ToolStripMenuItem.CheckOnClick = true;
             this.x64ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.x64ToolStripMenuItem.Name = "x64ToolStripMenuItem";
-            this.x64ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.x64ToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.x64ToolStripMenuItem.Text = "64x64";
             this.x64ToolStripMenuItem.Click += new System.EventHandler(this.x64ToolStripMenuItem_Click);
             // 
@@ -459,14 +462,14 @@ namespace HLTextureTools
             // 
             this.x128ToolStripMenuItem.CheckOnClick = true;
             this.x128ToolStripMenuItem.Name = "x128ToolStripMenuItem";
-            this.x128ToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.x128ToolStripMenuItem.Size = new System.Drawing.Size(147, 26);
             this.x128ToolStripMenuItem.Text = "128x128";
             this.x128ToolStripMenuItem.Click += new System.EventHandler(this.x128ToolStripMenuItem_Click);
             // 
             // associateToolStripMenuItem
             // 
             this.associateToolStripMenuItem.Name = "associateToolStripMenuItem";
-            this.associateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.associateToolStripMenuItem.Size = new System.Drawing.Size(225, 26);
             this.associateToolStripMenuItem.Text = "Associate files ...";
             this.associateToolStripMenuItem.Click += new System.EventHandler(this.associateToolStripMenuItem_Click);
             // 
@@ -483,54 +486,54 @@ namespace HLTextureTools
             this.fixTextureNameToolStripMenuItem,
             this.makeTransparentColorToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.toolsToolStripMenuItem.Text = "Tools";
             this.toolsToolStripMenuItem.DropDownOpening += new System.EventHandler(this.toolsToolStripMenuItem_DropDownOpening);
             // 
             // createNewWadToolStripMenuItem
             // 
             this.createNewWadToolStripMenuItem.Name = "createNewWadToolStripMenuItem";
-            this.createNewWadToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.createNewWadToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.createNewWadToolStripMenuItem.Text = "Create new Wad ...";
             this.createNewWadToolStripMenuItem.Click += new System.EventHandler(this.createNewWadToolStripMenuItem_Click);
             // 
             // createNewSpriteToolStripMenuItem
             // 
             this.createNewSpriteToolStripMenuItem.Name = "createNewSpriteToolStripMenuItem";
-            this.createNewSpriteToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.createNewSpriteToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.createNewSpriteToolStripMenuItem.Text = "Create new Sprite ...";
             this.createNewSpriteToolStripMenuItem.Click += new System.EventHandler(this.createNewSpriteToolStripMenuItem_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(230, 6);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(287, 6);
             // 
             // manageVHETexturesToolStripMenuItem
             // 
             this.manageVHETexturesToolStripMenuItem.Enabled = false;
             this.manageVHETexturesToolStripMenuItem.Name = "manageVHETexturesToolStripMenuItem";
-            this.manageVHETexturesToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.manageVHETexturesToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.manageVHETexturesToolStripMenuItem.Text = "Manage VHE textures";
             this.manageVHETexturesToolStripMenuItem.Click += new System.EventHandler(this.manageVHETexturesToolStripMenuItem_Click);
             // 
             // extractWADFromBSPToolStripMenuItem
             // 
             this.extractWADFromBSPToolStripMenuItem.Name = "extractWADFromBSPToolStripMenuItem";
-            this.extractWADFromBSPToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.extractWADFromBSPToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.extractWADFromBSPToolStripMenuItem.Text = "Extract WAD from BSP";
             this.extractWADFromBSPToolStripMenuItem.Click += new System.EventHandler(this.extractWADFromBSPToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(230, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(287, 6);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Enabled = false;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.editToolStripMenuItem.Text = "Fix sprite type";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
@@ -539,7 +542,7 @@ namespace HLTextureTools
             this.fixTextureNameToolStripMenuItem.Enabled = false;
             this.fixTextureNameToolStripMenuItem.Name = "fixTextureNameToolStripMenuItem";
             this.fixTextureNameToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.fixTextureNameToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.fixTextureNameToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.fixTextureNameToolStripMenuItem.Text = "Fix texture name";
             this.fixTextureNameToolStripMenuItem.Click += new System.EventHandler(this.fixTextureNameToolStripMenuItem_Click);
             // 
@@ -550,13 +553,13 @@ namespace HLTextureTools
             this.doBackupToolStripMenuItem});
             this.makeTransparentColorToolStripMenuItem.Enabled = false;
             this.makeTransparentColorToolStripMenuItem.Name = "makeTransparentColorToolStripMenuItem";
-            this.makeTransparentColorToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.makeTransparentColorToolStripMenuItem.Size = new System.Drawing.Size(290, 26);
             this.makeTransparentColorToolStripMenuItem.Text = "Make transparent background";
             // 
             // selectColorToolStripMenuItem
             // 
             this.selectColorToolStripMenuItem.Name = "selectColorToolStripMenuItem";
-            this.selectColorToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.selectColorToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.selectColorToolStripMenuItem.Text = "Select color";
             this.selectColorToolStripMenuItem.Click += new System.EventHandler(this.selectColorToolStripMenuItem_Click);
             // 
@@ -566,7 +569,7 @@ namespace HLTextureTools
             this.doBackupToolStripMenuItem.CheckOnClick = true;
             this.doBackupToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.doBackupToolStripMenuItem.Name = "doBackupToolStripMenuItem";
-            this.doBackupToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.doBackupToolStripMenuItem.Size = new System.Drawing.Size(170, 26);
             this.doBackupToolStripMenuItem.Text = "Do backup";
             // 
             // helpToolStripMenuItem
@@ -577,38 +580,39 @@ namespace HLTextureTools
             this.toolStripMenuItem7,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // recommendedTextureSizesToolStripMenuItem
             // 
             this.recommendedTextureSizesToolStripMenuItem.Name = "recommendedTextureSizesToolStripMenuItem";
             this.recommendedTextureSizesToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.recommendedTextureSizesToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.recommendedTextureSizesToolStripMenuItem.Size = new System.Drawing.Size(306, 26);
             this.recommendedTextureSizesToolStripMenuItem.Text = "Recommended Texture Sizes";
             this.recommendedTextureSizesToolStripMenuItem.Click += new System.EventHandler(this.recommendedTextureSizesToolStripMenuItem_Click);
             // 
             // projectHomepageToolStripMenuItem
             // 
             this.projectHomepageToolStripMenuItem.Name = "projectHomepageToolStripMenuItem";
-            this.projectHomepageToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.projectHomepageToolStripMenuItem.Size = new System.Drawing.Size(306, 26);
             this.projectHomepageToolStripMenuItem.Text = "Project homepage (GitHub)";
             this.projectHomepageToolStripMenuItem.Click += new System.EventHandler(this.projectHomepageToolStripMenuItem_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(240, 6);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(303, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(306, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripButton,
             this.saveToolStripButton,
@@ -629,9 +633,9 @@ namespace HLTextureTools
             this.prevFileBtn,
             this.filesBox,
             this.nextFileBtn});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(984, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1312, 28);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -641,7 +645,7 @@ namespace HLTextureTools
             this.openToolStripButton.Image = global::HLTextureTools.Properties.Resources.folder_picture;
             this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripButton.Name = "openToolStripButton";
-            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Size = new System.Drawing.Size(29, 25);
             this.openToolStripButton.Text = "&Open";
             this.openToolStripButton.Click += new System.EventHandler(this.openFileItem_Click);
             // 
@@ -652,7 +656,7 @@ namespace HLTextureTools
             this.saveToolStripButton.Image = global::HLTextureTools.Properties.Resources.picture_save;
             this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Size = new System.Drawing.Size(29, 25);
             this.saveToolStripButton.Text = "&Extract";
             this.saveToolStripButton.Click += new System.EventHandler(this.extractImageItem_Click);
             // 
@@ -663,14 +667,14 @@ namespace HLTextureTools
             this.runSprToolButton.Image = global::HLTextureTools.Properties.Resources.control_play_blue;
             this.runSprToolButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.runSprToolButton.Name = "runSprToolButton";
-            this.runSprToolButton.Size = new System.Drawing.Size(23, 22);
+            this.runSprToolButton.Size = new System.Drawing.Size(29, 25);
             this.runSprToolButton.Text = "Animation Play/Stop";
             this.runSprToolButton.Click += new System.EventHandler(this.animateMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 28);
             // 
             // paletteStripButton
             // 
@@ -679,7 +683,7 @@ namespace HLTextureTools
             this.paletteStripButton.Image = global::HLTextureTools.Properties.Resources.palette;
             this.paletteStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.paletteStripButton.Name = "paletteStripButton";
-            this.paletteStripButton.Size = new System.Drawing.Size(23, 22);
+            this.paletteStripButton.Size = new System.Drawing.Size(29, 25);
             this.paletteStripButton.Text = "Color palette";
             this.paletteStripButton.Click += new System.EventHandler(this.colorPaletteToolItem_Click);
             // 
@@ -690,14 +694,14 @@ namespace HLTextureTools
             this.copyToolStripButton.Image = global::HLTextureTools.Properties.Resources.page_copy;
             this.copyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripButton.Name = "copyToolStripButton";
-            this.copyToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.copyToolStripButton.Size = new System.Drawing.Size(29, 25);
             this.copyToolStripButton.Text = "&Copy";
             this.copyToolStripButton.Click += new System.EventHandler(this.copyMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 28);
             // 
             // rlStripButton1
             // 
@@ -706,7 +710,7 @@ namespace HLTextureTools
             this.rlStripButton1.Image = global::HLTextureTools.Properties.Resources.shape_rotate_anticlockwise;
             this.rlStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.rlStripButton1.Name = "rlStripButton1";
-            this.rlStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.rlStripButton1.Size = new System.Drawing.Size(29, 25);
             this.rlStripButton1.Text = "Rotate left";
             this.rlStripButton1.Click += new System.EventHandler(this.rotateLItem_Click);
             // 
@@ -717,14 +721,14 @@ namespace HLTextureTools
             this.rpStripButton1.Image = global::HLTextureTools.Properties.Resources.shape_rotate_clockwise;
             this.rpStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.rpStripButton1.Name = "rpStripButton1";
-            this.rpStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.rpStripButton1.Size = new System.Drawing.Size(29, 25);
             this.rpStripButton1.Text = "Rotate right";
             this.rpStripButton1.Click += new System.EventHandler(this.rotateRItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 28);
             // 
             // pStripButton
             // 
@@ -733,7 +737,7 @@ namespace HLTextureTools
             this.pStripButton.Image = global::HLTextureTools.Properties.Resources.zoom_in;
             this.pStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pStripButton.Name = "pStripButton";
-            this.pStripButton.Size = new System.Drawing.Size(23, 22);
+            this.pStripButton.Size = new System.Drawing.Size(29, 25);
             this.pStripButton.Text = "Zoom in (ctrl +)";
             this.pStripButton.Click += new System.EventHandler(this.pStripButton_Click);
             // 
@@ -744,7 +748,7 @@ namespace HLTextureTools
             this.mStripButton.Image = global::HLTextureTools.Properties.Resources.zoom_out;
             this.mStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mStripButton.Name = "mStripButton";
-            this.mStripButton.Size = new System.Drawing.Size(23, 22);
+            this.mStripButton.Size = new System.Drawing.Size(29, 25);
             this.mStripButton.Text = "Zoom out (ctrl -)";
             this.mStripButton.Click += new System.EventHandler(this.mStripButton_Click);
             // 
@@ -755,14 +759,14 @@ namespace HLTextureTools
             this.toolStripButton2.Image = global::HLTextureTools.Properties.Resources._11;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 25);
             this.toolStripButton2.Text = "Reset zooming";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 28);
             // 
             // toolStripButton1
             // 
@@ -772,14 +776,14 @@ namespace HLTextureTools
             this.toolStripButton1.Image = global::HLTextureTools.Properties.Resources.application_view_tile;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 25);
             this.toolStripButton1.Text = "Tile View";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
             // 
             // prevFileBtn
             // 
@@ -788,7 +792,7 @@ namespace HLTextureTools
             this.prevFileBtn.Image = global::HLTextureTools.Properties.Resources.resultset_previous;
             this.prevFileBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.prevFileBtn.Name = "prevFileBtn";
-            this.prevFileBtn.Size = new System.Drawing.Size(23, 22);
+            this.prevFileBtn.Size = new System.Drawing.Size(29, 25);
             this.prevFileBtn.Text = "Previous file";
             this.prevFileBtn.Click += new System.EventHandler(this.prevFileBtn_Click);
             // 
@@ -796,7 +800,7 @@ namespace HLTextureTools
             // 
             this.filesBox.Enabled = false;
             this.filesBox.Name = "filesBox";
-            this.filesBox.Size = new System.Drawing.Size(121, 25);
+            this.filesBox.Size = new System.Drawing.Size(160, 28);
             this.filesBox.SelectedIndexChanged += new System.EventHandler(this.filesBox_SelectedIndexChanged);
             // 
             // nextFileBtn
@@ -806,12 +810,13 @@ namespace HLTextureTools
             this.nextFileBtn.Image = global::HLTextureTools.Properties.Resources.resultset_next;
             this.nextFileBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.nextFileBtn.Name = "nextFileBtn";
-            this.nextFileBtn.Size = new System.Drawing.Size(23, 22);
+            this.nextFileBtn.Size = new System.Drawing.Size(29, 25);
             this.nextFileBtn.Text = "Next file";
             this.nextFileBtn.Click += new System.EventHandler(this.nextFileBtn_Click);
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sLbl1,
             this.totalLbl,
@@ -823,9 +828,10 @@ namespace HLTextureTools
             this.sLbl2,
             this.typeLbl,
             this.progressBar});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 539);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 668);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(984, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1312, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -833,14 +839,14 @@ namespace HLTextureTools
             // 
             this.sLbl1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sLbl1.Name = "sLbl1";
-            this.sLbl1.Size = new System.Drawing.Size(43, 17);
+            this.sLbl1.Size = new System.Drawing.Size(55, 20);
             this.sLbl1.Text = "Count:";
             this.sLbl1.Visible = false;
             // 
             // totalLbl
             // 
             this.totalLbl.Name = "totalLbl";
-            this.totalLbl.Size = new System.Drawing.Size(13, 17);
+            this.totalLbl.Size = new System.Drawing.Size(17, 20);
             this.totalLbl.Text = "0";
             this.totalLbl.Visible = false;
             // 
@@ -849,20 +855,20 @@ namespace HLTextureTools
             this.statusSeperator1.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)));
             this.statusSeperator1.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.statusSeperator1.Name = "statusSeperator1";
-            this.statusSeperator1.Size = new System.Drawing.Size(4, 17);
+            this.statusSeperator1.Size = new System.Drawing.Size(4, 16);
             // 
             // sLbl3
             // 
             this.sLbl3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sLbl3.Name = "sLbl3";
-            this.sLbl3.Size = new System.Drawing.Size(43, 17);
+            this.sLbl3.Size = new System.Drawing.Size(55, 20);
             this.sLbl3.Text = "Name:";
             this.sLbl3.Visible = false;
             // 
             // nameLbl
             // 
             this.nameLbl.Name = "nameLbl";
-            this.nameLbl.Size = new System.Drawing.Size(12, 17);
+            this.nameLbl.Size = new System.Drawing.Size(15, 20);
             this.nameLbl.Text = "-";
             this.nameLbl.Visible = false;
             // 
@@ -870,14 +876,14 @@ namespace HLTextureTools
             // 
             this.sLbl4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sLbl4.Name = "sLbl4";
-            this.sLbl4.Size = new System.Drawing.Size(33, 17);
+            this.sLbl4.Size = new System.Drawing.Size(40, 20);
             this.sLbl4.Text = "Size:";
             this.sLbl4.Visible = false;
             // 
             // sizeLbl
             // 
             this.sizeLbl.Name = "sizeLbl";
-            this.sizeLbl.Size = new System.Drawing.Size(12, 17);
+            this.sizeLbl.Size = new System.Drawing.Size(15, 20);
             this.sizeLbl.Text = "-";
             this.sizeLbl.Visible = false;
             // 
@@ -885,21 +891,21 @@ namespace HLTextureTools
             // 
             this.sLbl2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.sLbl2.Name = "sLbl2";
-            this.sLbl2.Size = new System.Drawing.Size(36, 17);
+            this.sLbl2.Size = new System.Drawing.Size(46, 20);
             this.sLbl2.Text = "Type:";
             this.sLbl2.Visible = false;
             // 
             // typeLbl
             // 
             this.typeLbl.Name = "typeLbl";
-            this.typeLbl.Size = new System.Drawing.Size(12, 17);
+            this.typeLbl.Size = new System.Drawing.Size(15, 20);
             this.typeLbl.Text = "-";
             this.typeLbl.Visible = false;
             // 
             // progressBar
             // 
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(100, 16);
+            this.progressBar.Size = new System.Drawing.Size(133, 17);
             this.progressBar.Visible = false;
             // 
             // timerAnimate
@@ -924,9 +930,10 @@ namespace HLTextureTools
             // 
             this.lblRgb.BackColor = System.Drawing.Color.White;
             this.lblRgb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblRgb.Location = new System.Drawing.Point(24, 70);
+            this.lblRgb.Location = new System.Drawing.Point(32, 86);
+            this.lblRgb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRgb.Name = "lblRgb";
-            this.lblRgb.Size = new System.Drawing.Size(18, 15);
+            this.lblRgb.Size = new System.Drawing.Size(23, 18);
             this.lblRgb.TabIndex = 3;
             this.lblRgb.Visible = false;
             // 
@@ -935,9 +942,10 @@ namespace HLTextureTools
             this.transLbl.AutoSize = true;
             this.transLbl.BackColor = System.Drawing.Color.White;
             this.transLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.transLbl.Location = new System.Drawing.Point(47, 70);
+            this.transLbl.Location = new System.Drawing.Point(63, 86);
+            this.transLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.transLbl.Name = "transLbl";
-            this.transLbl.Size = new System.Drawing.Size(39, 15);
+            this.transLbl.Size = new System.Drawing.Size(49, 18);
             this.transLbl.TabIndex = 2;
             this.transLbl.Text = "RGB: ";
             this.transLbl.Visible = false;
@@ -951,14 +959,15 @@ namespace HLTextureTools
             this.splitContainer1.BackColor = System.Drawing.Color.LightGray;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 49);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 56);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Control;
             this.splitContainer1.Panel1.Controls.Add(this.panel1);
-            this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(10, 10, 2, 10);
+            this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(13, 12, 3, 12);
             // 
             // splitContainer1.Panel2
             // 
@@ -966,10 +975,10 @@ namespace HLTextureTools
             this.splitContainer1.Panel2.Controls.Add(this.listViewEx1);
             this.splitContainer1.Panel2.Controls.Add(this.textBox1);
             this.splitContainer1.Panel2.Controls.Add(this.listBox1);
-            this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(4, 30, 10, 10);
-            this.splitContainer1.Size = new System.Drawing.Size(984, 490);
-            this.splitContainer1.SplitterDistance = 657;
-            this.splitContainer1.SplitterWidth = 6;
+            this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(5, 37, 13, 12);
+            this.splitContainer1.Size = new System.Drawing.Size(1312, 612);
+            this.splitContainer1.SplitterDistance = 965;
+            this.splitContainer1.SplitterWidth = 8;
             this.splitContainer1.TabIndex = 6;
             // 
             // panel1
@@ -979,17 +988,19 @@ namespace HLTextureTools
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(10, 10);
+            this.panel1.Location = new System.Drawing.Point(13, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(645, 470);
+            this.panel1.Size = new System.Drawing.Size(949, 588);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(641, 466);
+            this.pictureBox1.Size = new System.Drawing.Size(945, 584);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -1006,10 +1017,11 @@ namespace HLTextureTools
             this.listViewEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewEx1.HideSelection = false;
             this.listViewEx1.LargeImageList = this.tlCache;
-            this.listViewEx1.Location = new System.Drawing.Point(4, 30);
+            this.listViewEx1.Location = new System.Drawing.Point(5, 37);
+            this.listViewEx1.Margin = new System.Windows.Forms.Padding(4);
             this.listViewEx1.MultiSelect = false;
             this.listViewEx1.Name = "listViewEx1";
-            this.listViewEx1.Size = new System.Drawing.Size(307, 450);
+            this.listViewEx1.Size = new System.Drawing.Size(321, 563);
             this.listViewEx1.TabIndex = 5;
             this.listViewEx1.UseCompatibleStateImageBehavior = false;
             this.listViewEx1.VirtualListSize = 50;
@@ -1022,10 +1034,11 @@ namespace HLTextureTools
             // 
             this.textBox1.Enabled = false;
             this.textBox1.ForeColor = System.Drawing.Color.Silver;
-            this.textBox1.Location = new System.Drawing.Point(4, 6);
+            this.textBox1.Location = new System.Drawing.Point(5, 7);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(269, 20);
+            this.textBox1.Size = new System.Drawing.Size(357, 24);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "Search";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -1039,20 +1052,28 @@ namespace HLTextureTools
             this.listBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.listBox1.Enabled = false;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(4, 30);
+            this.listBox1.Location = new System.Drawing.Point(5, 37);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(307, 450);
+            this.listBox1.Size = new System.Drawing.Size(321, 563);
             this.listBox1.TabIndex = 3;
             this.listBox1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.listBox1_DrawItem);
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDown);
             // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(224, 26);
+            this.toolStripMenuItem9.Text = "As MIP ...";
+            this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.ClientSize = new System.Drawing.Size(1312, 690);
             this.Controls.Add(this.lblRgb);
             this.Controls.Add(this.transLbl);
             this.Controls.Add(this.splitContainer1);
@@ -1061,7 +1082,8 @@ namespace HLTextureTools
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(385, 256);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(507, 304);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Half-Life Texture Tools ";
@@ -1190,6 +1212,7 @@ namespace HLTextureTools
         private ToolStripMenuItem switchBackgroundToolStripMenuItem;
         private OpenFileDialog openFileDialogDetail;
         private ToolStripMenuItem projectHomepageToolStripMenuItem;
+        private ToolStripMenuItem toolStripMenuItem9;
     }
 }
 

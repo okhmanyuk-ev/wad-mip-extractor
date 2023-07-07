@@ -949,6 +949,37 @@ namespace HLTextureTools
             }
         }
 
+        private void ExtractAllAsMip()
+        {
+            if (folderDialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            toolStrip1.Enabled = false;
+            menuStrip1.Enabled = false;
+            progressBar.Visible = true;
+            progressBar.Value = 0;
+
+            if (currentFileType == HLFileType.Wad)
+            {
+                progressBar.Maximum = listBox1.Items.Count;
+                for (int i = 0; i < listBox1.Items.Count; i++)
+                {
+                    if (listBox1.Items[i] is WAD3Loader.WADLump lumpInfo)
+                    {
+                        var path = Path.Combine(folderDialog.SelectedPath, CleanPath(lumpInfo.Name) + ".mip");
+                        var bytes = wadLoader.GetLumpBuf(i);
+                        File.WriteAllBytes(path, bytes);
+                    }
+                    progressBar.Value++;
+                    Application.DoEvents();
+                }
+
+            }
+            progressBar.Visible = false;
+            toolStrip1.Enabled = true;
+            menuStrip1.Enabled = true;
+        }
+
         private string CleanPath(string illegal)
         {
             string invalid = new string(Path.GetInvalidFileNameChars()) + new string(Path.GetInvalidPathChars());
@@ -2002,6 +2033,11 @@ namespace HLTextureTools
         private void switchBackgroundToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SwitchPicBg();
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            ExtractAllAsMip();
         }
 
         private void projectHomepageToolStripMenuItem_Click(object sender, EventArgs e)

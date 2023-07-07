@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Reflection;
 using FreeImageAPI;
 
 namespace HLTools
@@ -333,6 +334,13 @@ namespace HLTools
             }
 
             return retVal;
+        }
+
+        public byte[] GetLumpBuf(int index)
+        {
+            binReader.BaseStream.Seek(LumpsInfo[index].Offset, SeekOrigin.Begin);
+            byte[] data = binReader.ReadBytes((int)LumpsInfo[index].CompressedLength);
+            return data;
         }
 
         /// <summary>
